@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot to Code</title>
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+    button { margin: 5px; padding: 5px 10px; }
+    #status { margin-top: 10px; }
+    #generatedCode { 
+      margin-top: 10px; 
+      max-height: 200px; 
+      overflow-y: auto; 
+      border: 1px solid #ccc; 
+      padding: 5px; 
+    }
+  </style>
+</head>
+<body>
+  <h2>Screenshot to Code</h2>
+  <button id="captureBtn">Capture Screenshot</button>
+  <button id="generateBtn" disabled>Generate Code</button>
+  <div id="status"></div>
+  <pre id="generatedCode"></pre>
+  <button id="copyBtn" style="display: none;">Copy Code</button>
+  <script src="popup.js"></script>
+</body>
+</html>
